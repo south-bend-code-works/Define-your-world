@@ -1,0 +1,58 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  opacity: 1 !important;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  opacity: 1 !important;
+  color: white;
+}
+
+.slides {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#world {
+  position: absolute;
+  z-index: 100;
+  padding-left: 40%;
+  padding-top: 7%;
+  opacity: 1 !important;
+}
+
+#tag {
+  position: absolute;
+  z-index: 100;
+  padding-left: 31%;
+  opacity: 1 !important;
+}
+
+#tag2 {
+  position: absolute;
+  z-index: 100;
+  padding-left: 25%;
+  padding-top: 27%;
+  opacity: 1 !important;
+}
+
+@media only screen and (max-device-width: 736px){
+  #world {
+    padding-right: 5%;
+  }
+}
+
+.slider {
+  width: auto;
+  height: 300px;
+}
+
+li.indicator-item {
+  background-color: black !important;
+  }

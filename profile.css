@@ -1,0 +1,67 @@
+body{
+  background-color: black;
+  font-family: sans-serif;
+  margin: 0 auto;
+}
+
+.top{
+  background-color: white;
+  height: 500px;
+}
+
+#humpfreyCrumbillbotum {
+  background-image: url('https://i.ytimg.com/vi/Xq13QeujMvA/maxresdefault.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+}
+
+#PeteButtigieg {
+  background-image: url('PeteB.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+}
+
+/*#hi{
+  background-color: LightCoral;
+  width: 100%;
+}*/
+
+#gg{
+
+  border-radius: 50%;
+  heigh:100px;
+  width:100px;
+  float: left;
+margin-left:20px;
+margin-top: 20px; s
+}
+
+#cat{
+  border-radius: 50%;
+
+}
+
+#be{
+  border:2px #61E37B solid;
+  width: 600px;
+  height: 400px;
+}
+
+#cow{
+background-color: #118693;
+
+}
+
+/*.card-image{
+  border-radius: 50%;
+}*/
+
+#textcolor {
+  color: white;
+  font-size: 18px;
+  border: 2px #118693 solid;
+}

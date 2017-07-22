@@ -1,0 +1,53 @@
+body{
+  background-color: black;
+  /*color: white;*/
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#story {
+  color: white;
+}
+/*#yellow{
+  border: 5px solid ;
+  padding: 1px 2px;
+  width: 93px;
+  border-radius: 100px
+}*/
+
+/*.lorde{
+color: black;
+*/
+
+}
+/*h2{
+    color: #61E378;
+}
+h4{
+  font-family: 'Josefin Sans', sans-serif;
+  color: #61E378;
+}
+
+h3{
+  font-family: 'Josefin Sans', sans-serif;
+    color: #61E378;
+}*/
+#bye{
+  height:200px;
+}
+
+#one{
+  border: 2px #61E37B solid;
+  border-radius: 20px;
+  /*margin-right: 50px;
+  width: 20;*/
+
+}
+
+.waves-effect waves-light btn{
+color: #61E378;
+}
+
+#keepitclean {
+  border: 2px #118693 solid;
+}

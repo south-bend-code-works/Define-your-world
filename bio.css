@@ -1,0 +1,27 @@
+body{
+  background-color: black;
+  font-style:impact;
+  text-align:center;
+}
+.nav-wrapper{
+  background-color: #118693;
+  color:#118693;
+}
+
+#header{
+  height:200px;
+  background-color: #61E37B;
+  background-repeat: no-repeat;
+  color:white;
+  font-size: 75pt;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+
+.parallax {
+  height:1100px;
+}
+#dropdown1{
+
+}

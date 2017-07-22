@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Feed Tracer </title>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Icons: Add this line of code for the icons that you find in materialize to work -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Stylesheets: All of your stylesheets are in this section  -->
+    <link rel="stylesheet" href="./feed.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <!--marks the end of your stylesheets section-->
+
+  <!--Scripts: All of your jQuery is in this section -->
+    <!--This is the jQuery CDN. To find, Google "jQuery CDN and select the website entitle 'code.jquery' "  -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!-- The JavaScript that you need from materialize. Can be found on the "Get Started" page on materialize -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+
+   <!-- firebase script -->
+   <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+
+   <!--The link to the file that you'll code your jQuery on. This is just like your "style.css" file but for jQuery-->
+    <script src="main.js"></script>
+    <!-- <script src="feed.js"></script> -->
+  <!--marks the end of your JavaScript section-->
+</head>
+
+<body>
+
+  <!-- dropDown Structure -->
+  <div class="row">
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="homefake.html">home</a></li>
+      <li><a href="feed.html">feed</a></li>
+      <!-- <li class="divider"></li>
+      <li><a href="bio.html">about</a></li> -->
+    </ul>
+      <div class="nav-wrapper">
+        <ul class="left hide-on-med-and-down">
+          <!-- dropDown Trigger -->
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons left">view_headline</i></a></li>
+        </ul>
+      </div>
+  </div>
+
+  <!-- google map -->
+  <div>
+    <div class="bored">
+      <h2> You Are Here </h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2316.7763948498564!2d-86.25754148978687!3d41.66967606181708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8816cd2d5a639b4d%3A0x7e4ab28874bfb563!2sUnion+Station+Technology+Center!5e1!3m2!1sen!2sus!4v1499887471580" width="1349" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <!-- <img src="https://shs.wustl.edu/LocationAndContacts/Documents/SHS-location.jpg"> -->
+  </div>
+
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn" href="#modal1">Create Post</a>
+   <!-- Modal Structure -->
+   <div id="modal1" class="modal">
+     <div class="modal-content">
+       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Select File</a>
+       <div class="file">
+         <div class="input-field4">
+           <form action="#">
+             <div class="file-field input-field">
+               <div class="btn">
+                 <span>File</span>
+                 <input type="file" id="uploadfile" multiple>
+               </div>
+
+               <div class="file-path-wrapper">
+                 <input class="file-path validate" type="text" placeholder="Upload one or more files">
+               </div>
+               <div class="input-field col s12">
+                 <textarea id="textarea1" class="caption" class="materialize-textarea"></textarea>
+                 <label for="textarea1">Textarea</label>
+               </div>
+             </div>
+           </form>
+         </div>
+       </div>
+
+       <!-- <form action="#">
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>File</span>
+              <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="caption" class="materialize-textarea"></textarea>
+            <label for="textarea1">Textarea</label>
+          </div>
+
+      </form> -->
+    </div>
+    <div class="modal-footer">
+      <a href="#!" id="submitButton" class="modal-action modal-close waves-effect waves-green btn-flat">submit</a>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Feed Posts -->
+  <div id="story">
+
+    <div class="row" id="keepitclean">
+      <!-- Profile Posts -->
+
+      <!-- GuyAlex -->
+      <a href="guyAlexprofile.html"><img id="guy" class="circle col s1 m1"
+      src="alex_sejdinaj.jpg"></a>
+      <!-- Post content -->
+      <img class="col s3 m3 responsive-img"
+      src="chocofact.jpeg">
+      <h4 class="col s6" id="one">At the Chocolate factory right now and I'm about to get some delicious chocolate!</h4>
+     </div>
+
+     <!-- GirlAlex -->
+     <div class="row" id="keepitclean">
+      <a href="girlAlexprofile.html"><img id="guy" class="circle col s1 m1"
+      src="alex_liggins.jpg"></a>
+      <h4 class="col s6" id="one">Just finished watching the South Bend Cubs, was an amazing game! Me and my family a lot of fun watching the game and eating baseball food.</h4>
+    </div>
+
+    <!-- PeteButtigieg -->
+    <div class="row" id="keepitclean">
+      <a href="PeteB.html"><img id="guy" class="circle col s1 m1"
+      src="PeteB.jpg"></a>
+      <img class="col s5 m5 responsive-img"
+      src="GoldenDome.jpeg">
+      <h4 class="col s6" id="one">The Golden Dome at Notre Dame is really cool. I wonder if its actually made of gold?</h4>
+    </div>
+
+  </div>
+
+<!--<button id="Redfoo">Redfoo</button>-->
+
+</body>
+
+</html>
