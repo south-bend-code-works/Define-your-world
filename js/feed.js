@@ -120,6 +120,7 @@
             addMarker(entry_lat,entry_long);
             firebase.storage().ref().child("images/entry/" + i).getDownloadURL().then(function(url) {
               console.log(storytext);
+              var storytext = entry[i].story;
               $('#story').append(
                 "<div class='row storyBlock'>" +
                   "<div class='col s4 offset-s1 storyBlockImage' style='background-image:url("+url+"); height: 100%;'></div>" +
