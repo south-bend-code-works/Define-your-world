@@ -110,7 +110,7 @@
           var user_name = entry[i].user_name;
           var first_name =  entry[i].first_name;
           var last_name = entry[i].last_name;
-          var story = entry[i].story;
+          var storytext = entry[i].story;
           var entry_location = {lat : entry_lat, long : entry_long}
           // this is where we send the entry location to the haersine formula to
           // be compared against the current location of the user.
@@ -122,7 +122,7 @@
                 "<div class='row storyBlock'>" +
                   "<div class='col s4 offset-s1 storyBlockImage' style='background-image:url("+url+"); height: 100%;'></div>" +
                   "<div class='col s6 left-align'>" +
-                    "<p>"+story+"</p>"+
+                    "<p>"+storytext+"</p>"+
                   "</div>" +
                 "</div>"
               );
