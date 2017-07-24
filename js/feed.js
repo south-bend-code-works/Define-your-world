@@ -41,7 +41,6 @@
   var x = document.getElementById("demo");
 
   function initialize(){
-    // $('#submitButton').click(testing);
     firebase.initializeApp(config);
     $('#submitButton').on('click',saveData);
     $('.modal').modal();
@@ -57,7 +56,6 @@
 
         marker = new google.maps.Marker({
           map: map,
-          // draggable: true,
           animation: google.maps.Animation.BOUNCE,
           position: {lat: lat, lng: long}
         });
@@ -117,12 +115,9 @@
           // this is where we send the entry location to the haersine formula to
           // be compared against the current location of the user.
           var distance = Geolocation.distance_from(entry_location);
-          console.log(distance);
           if(distance < 2){
             addMarker(entry_lat,entry_long);
             firebase.storage().ref().child("images/entry/" + i).getDownloadURL().then(function(url) {
-              console.log(url);
-              console.log(i);
               $('#story').append(
                 "<div class='row storyBlock'>" +
                   "<div class='col s4 offset-s1 storyBlockImage' style='background-image:url("+url+"); height: 100%;'></div>" +
@@ -165,7 +160,6 @@
       initMap();
       findEntriesNearMe();
     };
-
     navigator.geolocation.watchPosition(success, error, options);
   }
 //=============================
