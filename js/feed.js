@@ -115,12 +115,11 @@
           // this is where we send the entry location to the haersine formula to
           // be compared against the current location of the user.
           var distance = Geolocation.distance_from(entry_location);
-          console.log(storytext);
           if(distance < 2){
             addMarker(entry_lat,entry_long);
             firebase.storage().ref().child("images/entry/" + i).getDownloadURL().then(function(url) {
-              console.log(storytext);
               var storytext = entry[i].story;
+              console.log(storytext);
               $('#story').append(
                 "<div class='row storyBlock'>" +
                   "<div class='col s4 offset-s1 storyBlockImage' style='background-image:url("+url+"); height: 100%;'></div>" +
