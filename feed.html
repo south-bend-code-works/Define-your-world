@@ -24,8 +24,12 @@
   <!-- firebase script -->
   <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
   <!--The link to the file that you'll code your jQuery on. This is just like your "style.css" file but for jQuery-->
+  <!-- CDN for google maps -->
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
   <script src="./js/main.js"></script>
-  <!-- <script src="feed.js"></script> -->
+  <script src="./js/feed.js"></script>
   <!--marks the end of your JavaScript section-->
 </head>
 
@@ -48,13 +52,15 @@
   </div>
 
   <!-- google map -->
-  <div>
+  <!-- <div>
     <div class="bored">
       <h2> You Are Here </h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2316.7763948498564!2d-86.25754148978687!3d41.66967606181708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8816cd2d5a639b4d%3A0x7e4ab28874bfb563!2sUnion+Station+Technology+Center!5e1!3m2!1sen!2sus!4v1499887471580" width="1349" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2316.7763948498564!2d-86.25754148978687!3d41.66967606181708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8816cd2d5a639b4d%3A0x7e4ab28874bfb563!2sUnion+Station+Technology+Center!5e1!3m2!1sen!2sus!4v1499887471580" width="1349" height="500" frameborder="0" style="border:0" allowfullscreen></iframe> -->
       <!-- <img src="https://shs.wustl.edu/LocationAndContacts/Documents/SHS-location.jpg"> -->
+  <!-- </div> -->
+  <div class='row'>
+    <div id="map" class="col s10 offset-s1"></div>
   </div>
-
   <!-- Modal Trigger -->
   <a class="waves-effect waves-light btn" href="#modal1">Create Post</a>
    <!-- Modal Structure -->
@@ -74,8 +80,8 @@
                  <input class="file-path validate" type="text" placeholder="Upload one or more files">
                </div>
                <div class="input-field col s12">
-                 <textarea id="textarea1" class="caption" class="materialize-textarea"></textarea>
-                 <label for="textarea1">Textarea</label>
+                 <textarea id="storyInput" class="caption" class="materialize-textarea"></textarea>
+                 <label for="storyInput">Textarea</label>
                </div>
              </div>
            </form>
@@ -114,29 +120,29 @@
       <!-- Profile Posts -->
 
       <!-- GuyAlex -->
-      <a href="guyAlexprofile.html"><img id="guy" class="circle col s1 m1"
-      src="alex_sejdinaj.jpg"></a>
+      <!-- <a href="guyAlexprofile.html"><img id="guy" class="circle col s1 m1"
+      src="alex_sejdinaj.jpg"></a> -->
       <!-- Post content -->
-      <img class="col s3 m3 responsive-img"
+      <!-- <img class="col s3 m3 responsive-img"
       src="chocofact.jpeg">
       <h4 class="col s6" id="one">At the Chocolate factory right now and I'm about to get some delicious chocolate!</h4>
-     </div>
+     </div> -->
 
      <!-- GirlAlex -->
-     <div class="row" id="keepitclean">
+     <!-- <div class="row" id="keepitclean">
       <a href="girlAlexprofile.html"><img id="guy" class="circle col s1 m1"
       src="alex_liggins.jpg"></a>
       <h4 class="col s6" id="one">Just finished watching the South Bend Cubs, was an amazing game! Me and my family a lot of fun watching the game and eating baseball food.</h4>
-    </div>
+    </div> -->
 
     <!-- PeteButtigieg -->
-    <div class="row" id="keepitclean">
+    <!-- <div class="row" id="keepitclean">
       <a href="PeteB.html"><img id="guy" class="circle col s1 m1"
       src="PeteB.jpg"></a>
       <img class="col s5 m5 responsive-img"
       src="GoldenDome.jpeg">
       <h4 class="col s6" id="one">The Golden Dome at Notre Dame is really cool. I wonder if its actually made of gold?</h4>
-    </div>
+    </div> -->
 
   </div>
 

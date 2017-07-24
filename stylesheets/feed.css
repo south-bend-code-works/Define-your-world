@@ -5,6 +5,20 @@ body{
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.storyBlock {
+  height: 300px;
+}
+
+.storyBlockImage {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#map {
+  height: 400px;
+}
+
 #story {
   color: white;
 }
@@ -41,8 +55,9 @@ h3{
   border-radius: 20px;
   /*margin-right: 50px;
   width: 20;*/
-
 }
+
+
 
 .waves-effect waves-light btn{
 color: #61E378;
