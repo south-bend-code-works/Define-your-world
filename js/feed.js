@@ -117,9 +117,7 @@
           var distance = Geolocation.distance_from(entry_location);
           if(distance < 2){
             addMarker(entry_lat,entry_long);
-            firebase.storage().ref().child("images/entry/" + i).getDownloadURL().then(function(url) {
-              var storytext = entry[i].story;
-              console.log(storytext);
+            firebase.storage().ref().child("images/entry/" + i).getDownloadURL().then(function(url, storytext) {
               $('#story').append(
                 "<div class='row storyBlock'>" +
                   "<div class='col s4 offset-s1 storyBlockImage' style='background-image:url("+url+"); height: 100%;'></div>" +
