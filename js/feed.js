@@ -115,6 +115,7 @@
           // this is where we send the entry location to the haersine formula to
           // be compared against the current location of the user.
           var distance = Geolocation.distance_from(entry_location);
+          console.log(storytext);
           if(distance < 2){
             addMarker(entry_lat,entry_long);
             firebase.storage().ref().child("images/entry/" + i).getDownloadURL().then(function(url) {
